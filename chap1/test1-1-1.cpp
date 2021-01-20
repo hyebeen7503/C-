@@ -1,24 +1,16 @@
 #include <iostream>
 
 int main(void){
-    int num1, num2, num3, num4, num5;
-    std::cout << "1번째 정수 입력 : ";
-    std::cin >> num1;
+    int num=0;
+    int input;
 
-    std::cout << "2번째 정수 입력 : ";
-    std::cin >> num2;
+    for (int i = 1; i <= 5; i++){
+        std::cout << i << "번째 정수 입력 : ";
+        std::cin >> input;
+        num += input;
+    }
 
-    std::cout << "3번째 정수 입력 : ";
-    std::cin >> num3;
-
-    std::cout << "4번째 정수 입력 : ";
-    std::cin >> num4;
-
-    std::cout << "5번째 정수 입력 : ";
-    std::cin >> num5;
-
-    int result = num1 + num2 + num3 + num4 + num5;
-    std::cout << "합계 : " << result << std::endl;
+    std::cout << "합계 : " << num;
 
     return 0;
 }
