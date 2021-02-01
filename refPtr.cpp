@@ -7,8 +7,8 @@ int main(void){
     int **dptr = &ptr;
 
     int &ref1 = num;
-    int *(&ref2) = ptr;
-    int **(&ref3) = dptr;
+    int *(ref2) = ptr;
+    int **(ref3) = dptr;
 
     cout << ref1 << endl;
     cout << *ref2 << endl;

@@ -6,6 +6,7 @@ int main(void){
     int &num2 = num1;
 
     num2 = 3040;
+
     cout << "VAL : " << num1 << endl;
     cout << "REF : " << num2 << endl;
 
